@@ -9,9 +9,9 @@ export function RunningStripe() {
 
   return (
     <div className="relative overflow-hidden" style={{ backgroundColor: '#1166A2' }}>
-      <div className="py-8">
+      <div className="py-4 sm:py-6 md:py-8">
         <div className="flex animate-marquee whitespace-nowrap">
-          <span className="text-white text-2xl font-semibold tracking-widest px-12 uppercase">
+          <span className="text-white text-sm sm:text-base md:text-xl lg:text-2xl font-semibold tracking-wider sm:tracking-widest px-4 sm:px-8 md:px-12 uppercase">
             {duplicatedContent}
           </span>
         </div>

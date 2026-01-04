@@ -131,18 +131,18 @@ export function About() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 mt-10 pt-10 border-t border-border">
-              <div>
-                <div className="text-3xl font-bold text-foreground">50+</div>
-                <div className="text-sm text-muted-foreground mt-1">Projects Delivered</div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-10 pt-8 sm:pt-10 border-t border-border">
+              <div className="text-center sm:text-left">
+                <div className="text-2xl sm:text-3xl font-bold text-foreground">50+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">Projects Delivered</div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-foreground">4</div>
-                <div className="text-sm text-muted-foreground mt-1">Continents Served</div>
+              <div className="text-center sm:text-left">
+                <div className="text-2xl sm:text-3xl font-bold text-foreground">4</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">Continents Served</div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-foreground">95%</div>
-                <div className="text-sm text-muted-foreground mt-1">Client Retention</div>
+              <div className="text-center sm:text-left">
+                <div className="text-2xl sm:text-3xl font-bold text-foreground">95%</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">Client Retention</div>
               </div>
             </div>
           </div>

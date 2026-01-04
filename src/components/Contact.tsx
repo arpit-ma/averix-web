@@ -182,39 +182,39 @@ export function Contact() {
   return (
     <section id="contact" className="section-padding bg-secondary">
       <div className="section-container">
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
           {/* Left Column - CTA */}
           <div>
-            <p className="label-overline mb-4">Get Started</p>
-            <h2 className="heading-section text-foreground mb-6">
+            <p className="label-overline mb-3 sm:mb-4">Get Started</p>
+            <h2 className="heading-section text-foreground mb-4 sm:mb-6">
               Let's Discuss Your Project
             </h2>
-            <p className="body-large mb-8">
+            <p className="body-large mb-6 sm:mb-8">
               Whether you have a detailed plan or just an idea, we're here to help. 
               Book a free consultation to explore how AVERIX can support your digital goals.
             </p>
 
             {/* Contact Info */}
-            <div className="space-y-4 mb-10">
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <Mail className="h-5 w-5 text-accent" />
-                <span>hello@averix.com</span>
+            <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-10">
+              <div className="flex items-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
+                <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
+                <span className="break-all">hello@averix.com</span>
               </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <MapPin className="h-5 w-5 text-accent" />
+              <div className="flex items-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
+                <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
                 <span>Global: US, UAE, EU, India</span>
               </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <Clock className="h-5 w-5 text-accent" />
+              <div className="flex items-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
+                <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
                 <span>Response within 24 hours</span>
               </div>
             </div>
 
             {/* Rotating Strip */}
-            <div className="relative overflow-hidden rounded-lg mb-8" style={{ backgroundColor: '#1166A2' }} ref={stripRef}>
-              <div className="py-6">
+            <div className="relative overflow-hidden rounded-lg mb-6 sm:mb-8" style={{ backgroundColor: '#1166A2' }} ref={stripRef}>
+              <div className="py-4 sm:py-6">
                 <div className={`flex whitespace-nowrap ${isFirstCycle ? 'animate-marquee-fast-then-normal' : 'animate-marquee'}`}>
-                  <span className="text-white text-xl font-semibold tracking-wider px-8 uppercase">
+                  <span className="text-white text-xs sm:text-sm md:text-base lg:text-xl font-semibold tracking-wider px-4 sm:px-6 md:px-8 uppercase">
                     {(() => {
                       const content = "Strategy • Technology • Execution • Web Development • MERN Applications • Admin Portals • Lead Generation • Branding • Scalable Digital Systems •";
                       const spacedContent = content.replace(/ • /g, " •          ");
@@ -240,7 +240,7 @@ export function Contact() {
           </div>
 
           {/* Right Column - HubSpot Form */}
-          <div className="bg-card rounded-lg border border-border p-8">
+          <div className="bg-card rounded-lg border border-border p-4 sm:p-6 md:p-8">
             <div 
               className="hs-form-frame" 
               data-region="na2" 

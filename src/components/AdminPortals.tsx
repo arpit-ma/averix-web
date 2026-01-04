@@ -96,7 +96,7 @@ export function AdminPortals() {
 
         {/* CTA */}
         <div 
-          className="bg-primary rounded-lg p-8 md:p-12 relative overflow-hidden"
+          className="bg-primary rounded-lg p-6 sm:p-8 md:p-12 relative overflow-hidden"
           style={{
             backgroundImage: 'url(/wave.jpeg)',
             backgroundSize: 'cover',
@@ -108,10 +108,10 @@ export function AdminPortals() {
           <div className="absolute inset-0 bg-primary/70 rounded-lg"></div>
           
           <div className="max-w-2xl relative z-10">
-            <h3 className="heading-subsection text-primary-foreground mb-4">
+            <h3 className="heading-subsection text-primary-foreground mb-3 sm:mb-4 text-lg sm:text-xl md:text-2xl">
               Need a Custom Admin System?
             </h3>
-            <p className="text-primary-foreground/80 mb-6">
+            <p className="text-primary-foreground/80 mb-4 sm:mb-6 text-sm sm:text-base">
               Tell us about your business operations and we'll design an admin portal 
               that fits your exact requirements — no compromises.
             </p>
