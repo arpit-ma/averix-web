@@ -180,11 +180,11 @@ export function Contact() {
   }, [isFirstCycle]);
 
   return (
-    <section id="contact" className="section-padding bg-secondary">
-      <div className="section-container">
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
+    <section id="contact" className="section-padding bg-secondary overflow-hidden">
+      <div className="section-container max-w-full px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16">
           {/* Left Column - CTA */}
-          <div>
+          <div className="w-full max-w-full overflow-hidden">
             <p className="label-overline mb-3 sm:mb-4">Get Started</p>
             <h2 className="heading-section text-foreground mb-4 sm:mb-6">
               Let's Discuss Your Project
@@ -211,41 +211,46 @@ export function Contact() {
             </div>
 
             {/* Rotating Strip */}
-            <div className="relative overflow-hidden rounded-lg mb-6 sm:mb-8" style={{ backgroundColor: '#1166A2' }} ref={stripRef}>
-              <div className="py-4 sm:py-6">
+            <div className="relative overflow-hidden rounded-lg mb-4 sm:mb-6 md:mb-8" style={{ backgroundColor: '#1166A2' }} ref={stripRef}>
+              <div className="py-3 sm:py-4 md:py-6">
                 <div className={`flex whitespace-nowrap ${isFirstCycle ? 'animate-marquee-fast-then-normal' : 'animate-marquee'}`}>
-                  <span className="text-white text-xs sm:text-sm md:text-base lg:text-xl font-semibold tracking-wider px-4 sm:px-6 md:px-8 uppercase">
+                  <span className="text-white text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-xl font-semibold tracking-wide sm:tracking-wider px-2 sm:px-4 md:px-6 lg:px-8 uppercase">
                     {(() => {
                       const content = "Strategy • Technology • Execution • Web Development • MERN Applications • Admin Portals • Lead Generation • Branding • Scalable Digital Systems •";
-                      const spacedContent = content.replace(/ • /g, " •          ");
+                      // Less spacing for mobile readability
+                      const spacedContent = content.replace(/ • /g, " •     ");
                       const duplicatedContent = `${spacedContent} ${spacedContent} ${spacedContent}`;
                       return duplicatedContent;
                     })()}
                   </span>
                 </div>
               </div>
-              {/* Gradient fade edges */}
-              <div className="absolute inset-y-0 left-0 w-20 pointer-events-none z-10" style={{ background: 'linear-gradient(to right, #1166A2, transparent)' }} />
-              <div className="absolute inset-y-0 right-0 w-20 pointer-events-none z-10" style={{ background: 'linear-gradient(to left, #1166A2, transparent)' }} />
+              {/* Gradient fade edges - smaller on mobile */}
+              <div className="absolute inset-y-0 left-0 w-8 sm:w-12 md:w-20 pointer-events-none z-10" style={{ background: 'linear-gradient(to right, #1166A2, transparent)' }} />
+              <div className="absolute inset-y-0 right-0 w-8 sm:w-12 md:w-20 pointer-events-none z-10" style={{ background: 'linear-gradient(to left, #1166A2, transparent)' }} />
             </div>
 
             {/* Image */}
-            <div className="mt-6">
+            <div className="mt-4 sm:mt-6">
               <img 
                 src="/right-image.png" 
                 alt="Digital workspace" 
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-none object-cover rounded-lg"
               />
             </div>
           </div>
 
           {/* Right Column - HubSpot Form */}
-          <div className="bg-card rounded-lg border border-border p-4 sm:p-6 md:p-8">
+          <div className="bg-card rounded-lg border border-border p-3 sm:p-4 md:p-6 lg:p-8 overflow-hidden w-full max-w-full">
             <div 
-              className="hs-form-frame" 
+              className="hs-form-frame w-full max-w-full overflow-x-hidden" 
               data-region="na2" 
               data-form-id="a37e5b7e-90dd-449b-85a0-354e049cbcab" 
               data-portal-id="244756330"
+              style={{
+                minHeight: '400px',
+                maxWidth: '100%'
+              }}
             ></div>
           </div>
         </div>
