@@ -198,7 +198,7 @@ export function Contact() {
             <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-10">
               <div className="flex items-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
                 <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
-                <span className="break-all">hello@averix.com</span>
+                <span className="break-all">hello@averix-technology.com</span>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
                 <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
